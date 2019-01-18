@@ -1,7 +1,8 @@
 #! /bin/bash
 GREEN='\033[0;32m'
 NC='\033[0m'
-if [[ ! -e cocoapi ]];
+DIR=`dirname $0`
+if [ ! -e $DIR/cocoapi ]
 then
     URL=https://github.com/cocodataset/cocoapi/archive/master.zip
     wget -c -q --show-progress $URL 
